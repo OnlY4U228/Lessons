@@ -11,7 +11,6 @@ namespace FirstApp_v._0_
         static void Main(string[] args)
         {
             //Выше не смотреть
-            #region Урок 1
             #region Простые Переменные
             //Тип Имя = значение;
             //Тип2 Имя2;
@@ -34,7 +33,7 @@ namespace FirstApp_v._0_
                 --                  Декремент (-1)   
             */
             #endregion
-            #region Логические Операции
+            #region Условные Выражения
             /*
                 ==                  Равно 
                 &&                  И
@@ -61,13 +60,53 @@ namespace FirstApp_v._0_
             int y = 6;
             Console.WriteLine(q + y);//9
             #endregion
-            #region Задания
+            #region ToDo 1
             /*
                 1)Написать программу, которая получает на вход 2 значения ,затем выдает их сумму,разность,произведение и частное 
-                2)Создать репозиторий и кинуть ссылку на него в телегу,файлы в него можете закаидывать вручную изучите буквально 5 комманд
+                2)Создать репозиторий и кинуть ссылку на него в телегу,файлы в него можете закаидывать вручную,но изучите буквально 5 комманд для загрузки и обновления
                 3)когда будет готов второй урок, этот файл я обновлю и вы сможете его спулить
             */
             #endregion
+            //Условные Операторы
+            #region if-else
+                int first = 3;
+                int second = 5;
+                if(first > second)       //Если
+                {
+                    Console.WriteLine(first /*сложение строк,не путать с арифметическим сложением */+ " is bigger then " + second);
+                    /*Console.WriteLine(first + second) выведет их сумму*/
+                }
+                else if (first < second) //Иначе Если
+                {
+                    Console.WriteLine(first + " is smaller then " + second);
+                }
+                else                     //Иначе
+                {
+                    Console.WriteLine(first + "=" + second);
+                }
+            //Выведет 3 is smaller then 5
+            #endregion
+            #region switch-case
+                string select = Console.ReadLine();
+                switch (select)
+                {
+                    case "q":
+                        Console.WriteLine("You pressed q button");
+                        break;
+                    case "w":
+                        Console.WriteLine("You pressed w button");
+                        break;
+                    default:
+                        Console.WriteLine("I dont know wich button you had pressed");
+                        break;
+                }
+            #endregion
+            #region ToDo 2
+                //1)Построить блок схему для решения квадратных уравнений и реализовать ее
+                //Пользователь вводит 3 числа(a,b,c),программа решает
+                //2)Построить свою блок схему и реализовать ее при помощи конструкций if-else И switch-case
+                //3)Доработать калькулятор (певрое число,действие,второе число)
+                //залить на репозиторий дать мне ссылку на него(подписывайте проекты понятно типа "ToDo1")
             #endregion
         }
     }
